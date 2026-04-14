@@ -51,7 +51,7 @@ Use this document to keep coding decisions consistent across sessions and contri
 
 ### Non-Negotiables
 
-- Performance budget: --- 
+- Performance budget: ---
 - Security constraints: ---
 - Browser/platform support: ---
 
@@ -353,7 +353,7 @@ npx shadcn@latest init
 - Use URL/search params for filters and pagination before reaching for global state.
 - Lazy-load heavy pages: `React.lazy(() => import("@/modules/..."))`.
 
-### TanStack Query *(optional — add when async server data is needed)*
+### TanStack Query _(optional — add when async server data is needed)_
 
 ```bash
 npm install @tanstack/react-query
@@ -364,7 +364,7 @@ npm install @tanstack/react-query
 - Never use `useEffect` + `useState` for remote data — use `useQuery`.
 - Use `useMutation` for writes; invalidate related queries in `onSuccess`.
 
-### TanStack Virtual *(optional — add for lists with 100+ items)*
+### TanStack Virtual _(optional — add for lists with 100+ items)_
 
 ```bash
 npm install @tanstack/react-virtual
@@ -373,7 +373,7 @@ npm install @tanstack/react-virtual
 - Use `useVirtualizer`. The scroll container must have a fixed height and `overflow: auto`.
 - Do not add preemptively.
 
-### TanStack Table *(optional — add for sortable/filterable/paginated tables)*
+### TanStack Table _(optional — add for sortable/filterable/paginated tables)_
 
 ```bash
 npm install @tanstack/react-table
@@ -382,7 +382,7 @@ npm install @tanstack/react-table
 - Define `columns` outside the component to avoid re-creation on every render.
 - Only add row models you actually use (`getSortedRowModel`, `getPaginationRowModel`, etc.).
 
-### React Helmet Async *(optional — add only for public SEO pages)*
+### React Helmet Async _(optional — add only for public SEO pages)_
 
 ```bash
 npm install react-helmet-async
@@ -405,40 +405,48 @@ StrictMode > HelmetProvider > QueryClientProvider > RouterProvider
 Good UI reduces cognitive load and makes the next action obvious. Apply these to every screen.
 
 ### Hierarchy
+
 - Every screen has one primary action — make it the most prominent element.
 - Use size, weight, and contrast to rank content importance, not color alone.
 
 ### Spacing
+
 - Use the spacing scale consistently (4, 8, 12, 16, 24, 32, 48px). Tailwind's scale covers this.
 - More space between unrelated sections, less between related items.
 - White space is not wasted space — it creates clarity.
 
 ### Color
+
 - One primary action color. One neutral scale. Semantic colors for state (green = success, red = error, amber = warning).
 - Never rely on color alone to convey meaning — pair with text or icons.
 - Body text contrast must be ≥ 4.5:1.
 
 ### Typography
+
 - Max 2–3 font sizes per screen.
 - Body text: 14–16px. Minimum readable: 12px.
 - Line length: 55–80 characters for readable body copy.
 
 ### Feedback and state
+
 - Every async action needs a visible loading state (spinner, disabled button, skeleton).
 - Errors appear inline near the problem — not only as a toast.
 - Empty states explain why and suggest a next action.
 - Destructive actions require confirmation before executing.
 
 ### Mobile-first
+
 - Base layout at 375px wide. Scale up with `sm:` / `md:` / `lg:`.
 - Tap targets minimum 44×44px.
 - No hover-only interactions — they don't exist on touch.
 
 ### Consistency
+
 - All buttons, inputs, and spacing patterns look and behave the same across the app.
 - Before adding a new pattern, check if one already exists.
 
 ### Reduce friction
+
 - Remove fields that aren't required. Pre-fill what can be inferred.
 - One clear primary action per screen.
 - If something needs a lot of explanation, simplify the design.
