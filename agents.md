@@ -17,18 +17,41 @@ Use this document to keep coding decisions consistent across sessions and contri
 
 ## Table of Contents
 
-1. [Core Principles](#core-principles)
-2. [Single-App Folder Structure](#single-app-folder-structure)
-3. [Project Context AI Should Know](#project-context-ai-should-know)
-4. [Coding Standards (Language-Agnostic)](#coding-standards-language-agnostic)
-5. [Architecture and Separation of Concerns](#architecture-and-separation-of-concerns)
-6. [Dependencies and Tooling](#dependencies-and-tooling)
-7. [Error Handling and Observability](#error-handling-and-observability)
-8. [Security and Privacy Defaults](#security-and-privacy-defaults)
-9. [Testing Strategy](#testing-strategy)
-10. [Git and Change Management](#git-and-change-management)
-11. [Documentation Requirements](#documentation-requirements)
-12. [Definition of Done](#definition-of-done)
+1. [Project Metadata](#project-metadata)
+2. [Core Principles](#core-principles)
+3. [Single-App Folder Structure](#single-app-folder-structure)
+4. [Project Context AI Should Know](#project-context-ai-should-know)
+5. [Coding Standards (Language-Agnostic)](#coding-standards-language-agnostic)
+6. [Architecture and Separation of Concerns](#architecture-and-separation-of-concerns)
+7. [Dependencies and Tooling](#dependencies-and-tooling)
+8. [Error Handling and Observability](#error-handling-and-observability)
+9. [Security and Privacy Defaults](#security-and-privacy-defaults)
+10. [Testing Strategy](#testing-strategy)
+11. [Git and Change Management](#git-and-change-management)
+12. [Documentation Requirements](#documentation-requirements)
+13. [Definition of Done](#definition-of-done)
+
+---
+
+## Project Metadata
+
+- App name: ---
+- Primary runtime: ---
+- Deployment target: ---
+- Package manager: NPM
+- Main data sources: ---
+
+### Critical Flows
+
+- User signup/login: ---
+- Payment/billing: ---
+- Core CRUD flow: ---
+
+### Non-Negotiables
+
+- Performance budget: --- 
+- Security constraints: ---
+- Browser/platform support: ---
 
 ---
 
@@ -292,6 +315,7 @@ Use this section per project copy to add concrete values:
 
 ```md
 ### Project Metadata
+
 - App name:
 - Primary runtime:
 - Deployment target:
@@ -299,11 +323,13 @@ Use this section per project copy to add concrete values:
 - Main data sources:
 
 ### Critical Flows
+
 - User signup/login:
 - Payment/billing:
 - Core CRUD flow:
 
 ### Non-Negotiables
+
 - Performance budget:
 - Security constraints:
 - Browser/platform support:
