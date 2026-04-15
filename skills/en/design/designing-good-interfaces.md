@@ -191,3 +191,17 @@ When it's bad:
 * Users get confused, frustrated, and leave
 
 👉 The goal is not to impress — it is to **help users succeed effortlessly**.
+
+---
+
+## Further reading
+
+**Usability and patterns**
+
+- [10 usability heuristics for user interface design](https://www.nngroup.com/articles/ten-usability-heuristics/) (NN/g)
+- [Laws of UX](https://lawsofux.com/) — common UX principles (e.g. Hick’s Law, Fitts’s Law) explained simply
+
+**Accessibility**
+
+- [How to Meet WCAG (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/)
+- [Understanding Success Criterion 1.4.3: Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)

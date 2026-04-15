@@ -1,4 +1,4 @@
-# react-basics.md
+# React best practices
 
 ## Purpose
 
@@ -73,6 +73,8 @@ Only for:
 👉 Think: “Am I syncing with something outside React?”
 
 If not → don’t use it.
+
+For a full walkthrough with examples, see the official React guide [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect) and [Removing Effect dependencies](https://react.dev/learn/removing-effect-dependencies).
 
 ---
 
@@ -226,7 +228,7 @@ items.map((item, index) => <Item key={index} />)
 items.map(item => <Item key={item.id} />)
 ```
 
-👉 Wrong keys = weird bugs and broken UI updates.
+👉 Wrong keys = weird bugs and broken UI updates. See [Rendering lists — keeping list items in order with `key`](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-keys).
 
 ---
 
@@ -366,6 +368,22 @@ src/
 ### 🚨 Huge components
 
 → Split early
+
+---
+
+## Further reading
+
+**React docs**
+
+- [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect) — when `useEffect` is (and isn’t) the right tool
+- [Removing Effect dependencies](https://react.dev/learn/removing-effect-dependencies) — fixing unnecessary or fragile Effects
+- [useMemo](https://react.dev/reference/react/useMemo) — reference for legitimate memoization
+- [Passing data deeply with Context](https://react.dev/learn/passing-data-deeply-with-context) — Context without overusing it
+- [Rendering lists (keys)](https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-keys) — stable `key` values
+
+**Data fetching**
+
+- [TanStack Query (React)](https://tanstack.com/query/latest/docs/framework/react/overview) — preferred alternative to hand-rolled `useEffect` + `fetch` for server state
 
 ---
 

@@ -248,3 +248,22 @@ StrictMode > HelmetProvider > QueryClientProvider > RouterProvider
 - Avoid premature optimization
 - Keep everything predictable and centralized
 - Do not use `purple`, `indigo` or `violet` as brand/primary/accent color when setting up taiwlind/CSS, prefer `blue`, `sky`, `teal`, `red`, `orange` - or simply ask the user - when picking a brand color at the beginning
+
+---
+
+## Further reading
+
+**Tooling (official docs)**
+
+- [Vite — Getting started](https://vite.dev/guide/)
+- [Tailwind CSS — Install with Vite](https://tailwindcss.com/docs/installation/using-vite)
+- [shadcn/ui — Vite](https://ui.shadcn.com/docs/installation/vite)
+- [React Router — Home](https://reactrouter.com/home) (see current docs for `createBrowserRouter` / routing)
+- [TanStack Query — React](https://tanstack.com/query/latest/docs/framework/react/installation)
+- [TanStack Virtual](https://tanstack.com/virtual/latest/docs/introduction)
+- [TanStack Table](https://tanstack.com/table/latest/docs/introduction)
+- [react-helmet-async (GitHub)](https://github.com/staylor/react-helmet-async)
+
+**TypeScript**
+
+- [TypeScript — tsconfig reference](https://www.typescriptlang.org/tsconfig/) — use with `strict` and unused checks aligned with this scaffold
