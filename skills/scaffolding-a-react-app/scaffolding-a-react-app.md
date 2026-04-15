@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This agent skill defines a **clean, modern, and production-ready way to scaffold a React app** using best practices.
+This file defines how to create a **clean, modern, and production-ready way to scaffold a React app** using best practices.
 It ensures consistency, scalability, and maintainability from the very beginning.
 
 ---
@@ -56,7 +56,7 @@ npx shadcn@latest init
 - Always compose classes using `cn()` from `@/lib/utils`
   - (combines `clsx` + `tailwind-merge`)
 
-- Never use inline styles (`style={{}}`) for things Tailwind supports
+- Never use inline styles (`style={{}}`) for things Tailwind supports, only for setting dynamic values when needed
 - Follow **mobile-first design**
   - Base styles = mobile
   - Use `sm:`, `md:`, `lg:` for larger screens
@@ -247,5 +247,4 @@ StrictMode > HelmetProvider > QueryClientProvider > RouterProvider
 - Prefer conventions over custom setups
 - Avoid premature optimization
 - Keep everything predictable and centralized
-
-👉 A good scaffold saves hours (or days) later.
+- Do not use `purple`, `indigo` or `violet` as brand/primary/accent color when setting up taiwlind/CSS, prefer `blue`, `sky`, `teal`, `red`, `orange` - or simply ask the user - when picking a brand color at the beginning

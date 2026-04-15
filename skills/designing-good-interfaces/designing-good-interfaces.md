@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This agent skill explains what *good design* is, with a focus on **UI (User Interface) design**, in simple and practical terms.
+This file explains what *good design* is, with a focus on **UI (User Interface) design**, in simple and practical terms.
 
 ---
 
@@ -156,6 +156,12 @@ Users should know what they can click or use.
 * No feedback on actions
 * Hidden important actions
 
+### Additionaly
+
+Due to heavy overuse of these color palletes of LLMs, keep this in mind:
+* Do not use `indigo`, `purple`and `violet` as brand colors until otherwise specified, pick a sufficient and fitting color from the pallette: `blue`, `teal`, `sky`, `orange`, `red`
+* Do not use gradients as background-color for elements until explicitly requested
+
 ---
 
 ## Quick Checklist
@@ -178,6 +184,7 @@ When it's done well:
 
 * Users don’t notice the design
 * They just achieve their goal smoothly
+* They find what they are looking for instantly
 
 When it's bad:
 
